@@ -31,9 +31,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: muandane/setup-step-cli@v1
+    - uses: muandane/setup-step-cli@v0.0.1
       with:
-        version: '1.20.0'
+        version: '0.29.0'
     - name: Get Version
       run: step version
 ```
