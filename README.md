@@ -14,13 +14,15 @@
 
 ## Description
 
-This action downloads a specified version of the [smallstep cli](https://smallstep.com/docs/step-cli) on supported platforms and adds the `step` command to the runner's tool-cache.
+This action downloads a specified version of the
+[smallstep cli](https://smallstep.com/docs/step-cli) on supported platforms and
+adds the `step` command to the runner's tool-cache.
 
 ## Action Inputs
 
-| Input name | Description                    | Required | Default value |
-|------------|--------------------------------|----------|---------------|
-| version    | The version of the step-cli tool to install | true | latest |
+| Input name | Description                                 | Required | Default value |
+| ---------- | ------------------------------------------- | -------- | ------------- |
+| version    | The version of the step-cli tool to install | true     | latest        |
 
 ## Examples
 
@@ -31,18 +33,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: muandane/setup-step-cli@v0.0.1
-      with:
-        version: '0.29.0'
-    - name: Get Version
-      run: step version
+      - uses: muandane/setup-step-cli@v0.0.1
+        with:
+          version: '0.29.0'
+      - name: Get Version
+        run: step version
 ```
 
 ## Development
 
-> First, you'll need to have a reasonably modern version of `node` handy. This won't work with versions older than 24, for instance.
+> First, you'll need to have a reasonably modern version of `node` handy. This
+> won't work with versions older than 24, for instance.
 
-Install dependencies, make changes, then build, format, lint, package, and test changes.
+Install dependencies, make changes, then build, format, lint, package, and test
+changes.
 
 ```bash
 npm install
@@ -51,11 +55,15 @@ npm run all
 
 ## Releasing
 
-This project includes a helper script, [`script/release`](./script/release) designed to streamline the process of tagging and pushing new releases for GitHub Actions.
+This project includes a helper script, [`script/release`](./script/release)
+designed to streamline the process of tagging and pushing new releases for
+GitHub Actions.
 
 1. Update the version in `package.json`
 2. Run `npm run all` to ensure everything is built and tested
 3. Run `script/release` to create and push release tags
 4. Create a GitHub release with release notes
 
-For more information about versioning your action, see [Versioning](https://github.com/actions/toolkit/blob/main/docs/action-versioning.md) in the GitHub Actions toolkit.
+For more information about versioning your action, see
+[Versioning](https://github.com/actions/toolkit/blob/main/docs/action-versioning.md)
+in the GitHub Actions toolkit.
