@@ -5,13 +5,13 @@
   "author": "MOUALHI Zine EL Abidine",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/muandane/setup-step-cli",
+  "homepage": "https://github.com/Simplifi-ED/setup-step-cli",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muandane/setup-step-cli.git"
+    "url": "git+https://github.com/Simplifi-ED/setup-step-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/muandane/setup-step-cli/issues"
+    "url": "https://github.com/Simplifi-ED/setup-step-cli/issues"
   },
   "keywords": [
     "actions",

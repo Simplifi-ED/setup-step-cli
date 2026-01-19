@@ -1,9 +1,9 @@
 # Setup Smallstep CLI
 
-[![Linter](https://github.com/muandane/setup-step-cli/actions/workflows/linter.yml/badge.svg)](https://github.com/muandane/setup-step-cli/actions/workflows/linter.yml)
-[![CI](https://github.com/muandane/setup-step-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/muandane/setup-step-cli/actions/workflows/ci.yml)
-[![Check dist/](https://github.com/muandane/setup-step-cli/actions/workflows/check-dist.yml/badge.svg)](https://github.com/muandane/setup-step-cli/actions/workflows/check-dist.yml)
-[![CodeQL](https://github.com/muandane/setup-step-cli/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/muandane/setup-step-cli/actions/workflows/codeql-analysis.yml)
+[![Linter](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/linter.yml/badge.svg)](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/linter.yml)
+[![CI](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/ci.yml)
+[![Check dist/](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/check-dist.yml/badge.svg)](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/check-dist.yml)
+[![CodeQL](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Simplifi-ED/setup-step-cli/actions/workflows/codeql-analysis.yml)
 [![Coverage](./badges/coverage.svg)](./coverage)
 
 - [Description](#description)
@@ -33,7 +33,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: muandane/setup-step-cli@v0.0.1
+      - uses: Simplifi-ED/setup-step-cli@v0.0.1
         with:
           version: '0.29.0'
       - name: Get Version
